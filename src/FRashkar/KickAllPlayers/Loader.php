@@ -16,7 +16,7 @@
 
 namespace FRashkar\KickAllPlayers;
 
-use FRashkar\KickAllPlayers\Commands\FKickCommand;
+use FRashkar\KickAllPlayers\Commands\KickCommand;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\SingletonTrait;
 
