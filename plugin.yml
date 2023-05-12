@@ -1,4 +1,4 @@
-name: FKickAll
+name: KickAll
 api: 4.0.0
 main: FRashkar\KickAllPlayers\Loader
 version: 1.0.0
