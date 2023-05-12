@@ -24,7 +24,7 @@ use pocketmine\utils\TextFormat;
 
 class KickCommand extends Command implements PluginOwned
 {
-    /** var @Loader */
+    /** @var Loader */
     public Loader $loader;
     
     public function __construct(Loader $loader)
