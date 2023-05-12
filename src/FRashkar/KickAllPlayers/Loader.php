@@ -27,6 +27,6 @@ class Loader extends PluginBase
     public function onEnable(): void 
     {
         self::setInstance($this);
-        $this->getServer()->getCommandMap()->register("kickall", new FKickCommand($this));
+        $this->getServer()->getCommandMap()->register("kickall", new KickCommand($this));
     }
 }
