@@ -1,0 +1,9 @@
+name: FKickAll
+api: 4.0.0
+main: FRashkar\KickAllPlayers\Loader
+version: 1.0.0
+author: FRashkar-pm
+
+permissions:
+  kickall.use:
+    default: op
