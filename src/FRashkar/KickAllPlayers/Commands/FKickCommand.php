@@ -25,7 +25,7 @@ use pocketmine\utils\TextFormat;
 class FKickCommand extends Command implements PluginOwned
 {
     /** var @Loader */
-    private Loader $loader;
+    public Loader $loader;
     
     public function __construct(Loader $loader)
     {
@@ -44,26 +44,26 @@ class FKickCommand extends Command implements PluginOwned
         {
             if($args == "")
             {
-                if($sender->getServer()->getOnlinePlayers == null)
+                if($this->loader->getServer()->getOnlinePlayers() == null)
                 {
-                    $sender->getServer()->getLogger()->info("[FKickAll] => There are no players to kick!");
+                    $this->loader->getServer()->getLogger()->info("[FKickAll] => There are no players to kick!");
                 }else{
-                    foreach($sender->getServer()->getOnlinePlayers() as $players)
+                    foreach($this->loader->getServer()->getOnlinePlayers() as $players)
                     {
                         $players->kick("", false);
                     }
-                    $sender->getServer()->getLogger()->info("[FKickAll] => All players have been kicked!");
+                    $this->loader->getServer()->getLogger()->info("[FKickAll] => All players have been kicked!");
                 }
             }else{
-                if($sender->getServer()->getOnlinePlayers() == null)
+                if($this->loader->getServer()->getOnlinePlayers() == null)
                 {
-                    $sender->getServer()->getLogger()->info("[FKickAll] => There are no players to kick!");
+                    $this->loader->getServer()->getLogger()->info("[FKickAll] => There are no players to kick!");
                 }else{
-                    foreach($sender->getServer()->getOnlinePlayers() as $players)
+                    foreach($this->loader->getServer()->getOnlinePlayers() as $players)
                     {
                         $players->kick(implode(" ", $args), false);
                     }
-                    $sender->getServer()->getLogger()->info("[FKickAll] => All players have been kicked!");
+                    $this->loader->getServer()->getLogger()->info("[FKickAll] => All players have been kicked!");
                 }
             }
         }
@@ -71,18 +71,18 @@ class FKickCommand extends Command implements PluginOwned
         {
             if($args == "")
             {
-                foreach($sender->getServer()->getOnlinePlayers() as $players)
+                foreach($this->loader->getServer()->getOnlinePlayers() as $players)
                 {
                     $players->kick("", true);
                 }
             }else{
-                foreach($sender->getServer()->getOnlinePlayers() as $players)
+                foreach($this->loader->getServer()->getOnlinePlayers() as $players)
                 {
                     $players->kick(implode(" ", $args), true);
                 }
             }
             $name = $sender->getName();
-            $sender->getServer()->getLogger()->info("[FKickAll] => All players have been kicked by $name !");
+            $this->loader->getServer()->getLogger()->info("[FKickAll] => All players have been kicked by $name !");
         }else{
             $sender->sendMessage(TextFormat::RED . "Sorry you don't have permission to use this commands!");
         }
