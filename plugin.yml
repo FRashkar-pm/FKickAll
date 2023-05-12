@@ -5,11 +5,11 @@ version: 1.0.0
 author: FRashkar-pm
 
 commands:
-  kickall:
+  fkickall:
     description: FKick All Commands
     permission: fkickall.use
     aliases:
     - fk
 permissions:
-  kickall.use:
+  fkickall.use:
     default: op
