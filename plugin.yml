@@ -4,6 +4,12 @@ main: FRashkar\KickAllPlayers\Loader
 version: 1.0.0
 author: FRashkar-pm
 
+commands:
+  kickall:
+    description: Kick All Commands
+    permission: kickall.use
+    aliases:
+    - fk
 permissions:
   kickall.use:
     default: op
