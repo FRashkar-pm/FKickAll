@@ -1,12 +1,17 @@
 ## FKickAll
 <p align="center">
-<a href="https://poggit.pmmp.io/p/FKickAll"><img src="https://poggit.pmmp.io/shield.state/FKickAll"></a>
-
-<a href="https://poggit.pmmp.io/p/FKickAll"><img src="https://poggit.pmmp.io/shield.api/FKickAll"></a>
-
-<a href="https://poggit.pmmp.io/p/FKickAll"><img src="https://poggit.pmmp.io/shield.dl.total/FKickAll"></a>
-  
-<a href="https://poggit.pmmp.io/p/FKickAll"><img src="https://poggit.pmmp.io/shield.dl/FKickAll"></a>
+  <a href="https://poggit.pmmp.io/p/FKickAll">
+    <img src="https://poggit.pmmp.io/shield.state/FKickAll">
+  </a>
+  <a href="https://poggit.pmmp.io/p/FKickAll">
+    <img src="https://poggit.pmmp.io/shield.api/FKickAll">
+  </a>
+  <a href="https://poggit.pmmp.io/p/FKickAll">
+    <img src="https://poggit.pmmp.io/shield.dl.total/FKickAll">
+  </a>
+  <a href="https://poggit.pmmp.io/p/FKickAll">
+    <img src="https://poggit.pmmp.io/shield.dl/FKickAll">
+  </a>
 </p>
 <p align="center">
   A Simple Plugin to Kick All Players Out with or without reason.
