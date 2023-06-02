@@ -1,7 +1,7 @@
 name: FKickAll
 api: [4.0.0, 5.0.0]
 main: FRashkar\KickAllPlayers\Loader
-version: 1.0.0
+version: 1.0.1
 author: FRashkar-pm
 
 commands:
