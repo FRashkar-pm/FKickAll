@@ -31,6 +31,7 @@ class KickCommand extends Command implements PluginOwned
     {
         $this->loader = $loader;
         parent::__construct("fkickall", "FKick All Commands", "/fkickall <reason>", ["fk"]);
+        $this->setPermission("fkickall.use");
     }
     
     public function execute(CommandSender $sender, string $commandLabel, array $args)
@@ -67,7 +68,7 @@ class KickCommand extends Command implements PluginOwned
                 }
             }
         }
-        elseif($sender->hasPermission("kickall.use"))
+        elseif($sender->hasPermission("fkickall.use"))
         {
             if($args == "")
             {
